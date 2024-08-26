@@ -15,9 +15,9 @@ Go to the [COCO dataset download](https://cocodataset.org/#download) page and do
 
 **Step 2**
 
-`python download_dataset.py ` 
+`python utils/download_dataset.py ` 
 
-`python split_dataset.py `
+`python utils/split_dataset.py `
 
 Now, we have images, training, and validation set with annotations ready. If you want more classes or more images, check _download_dataset.py_ script.
 

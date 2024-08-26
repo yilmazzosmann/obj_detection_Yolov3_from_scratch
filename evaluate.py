@@ -1,8 +1,8 @@
 import torch
-import config
-from model import YOLOv3
-from utils import seed_everything, plot_couple_examples, get_evaluation_bboxes, mean_average_precision
-from dataloader import CustomCocoDataset
+import utils.config as config
+from utils.model import YOLOv3
+from utils.utils import seed_everything, plot_couple_examples, get_evaluation_bboxes, mean_average_precision
+from utils.dataloader import CustomCocoDataset
 from torch.utils.data import DataLoader, Subset
 
 seed_everything()

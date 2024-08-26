@@ -2,7 +2,7 @@
 Main file for training Yolo model on Pascal VOC and COCO dataset
 """
 
-import config
+import utils.config as config
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -10,9 +10,9 @@ import mlflow
 import mlflow.pytorch
 from torch.optim.lr_scheduler import MultiStepLR
 
-from model import YOLOv3
+from utils.model import YOLOv3
 from tqdm import tqdm
-from utils import (
+from utils.utils import (
     mean_average_precision,
     get_evaluation_bboxes,
     save_checkpoint,
@@ -21,7 +21,7 @@ from utils import (
     get_loaders,
     seed_everything
 )
-from loss import YoloLoss
+from utils.loss import YoloLoss
 import warnings
 warnings.filterwarnings("ignore")
 

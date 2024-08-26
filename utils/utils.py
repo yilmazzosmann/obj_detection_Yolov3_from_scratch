@@ -1,4 +1,4 @@
-import config
+import utils.config as config
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import numpy as np
@@ -546,7 +546,7 @@ def get_loaders(subset=False):
     If you want to work on a small subset of the dataset for testing purposes,
      set subset=True
     """
-    from dataloader import CustomCocoDataset
+    from utils.dataloader import CustomCocoDataset
 
     IMAGE_SIZE = config.IMAGE_SIZE
     train_dataset = CustomCocoDataset(

@@ -4,8 +4,8 @@ from torch.utils.data import Dataset, DataLoader, Subset
 from PIL import Image
 import albumentations as A
 import torch
-import config
-from utils import (
+import utils.config as config
+from utils.utils import (
     cells_to_bboxes,
     iou_width_height as iou,
     non_max_suppression as nms,
